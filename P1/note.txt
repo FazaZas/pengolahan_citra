@@ -1,0 +1,4 @@
+install python
+install text editor
+install pip
+install OpenCV menggunakan pip

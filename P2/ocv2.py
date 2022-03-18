@@ -53,16 +53,15 @@ def access_image():
     row4, col4, n = img04.shape
     print(row4, col4)
 
-    # plt.subplot(2, 2, 1), plt.imshow(img01)
-    # plt.title('Kuda 01'), plt.xticks([]), plt.yticks([])
-    # plt.subplot(2, 2, 2), plt.imshow(img02)
-    # plt.title('Kuda 02'), plt.xticks([]), plt.yticks([])
-    # plt.subplot(2, 2, 3), plt.imshow(img03)
-    # plt.title('Kuda 03'), plt.xticks([]), plt.yticks([])
-    # plt.subplot(2, 2, 4), plt.imshow(img04)
-    # plt.title('Kuda 04'), plt.xticks([]), plt.yticks([])
-    # plt.show()
-
+    plt.subplot(2, 2, 1), plt.imshow(img01)
+    plt.title('gambar 01'), plt.xticks([]), plt.yticks([])
+    plt.subplot(2, 2, 2), plt.imshow(img02)
+    plt.title('gambar 02'), plt.xticks([]), plt.yticks([])
+    plt.subplot(2, 2, 3), plt.imshow(img03)
+    plt.title('gambar 03'), plt.xticks([]), plt.yticks([])
+    plt.subplot(2, 2, 4), plt.imshow(img04)
+    plt.title('gambar 04'), plt.xticks([]), plt.yticks([])
+    plt.show()
     return
 
 

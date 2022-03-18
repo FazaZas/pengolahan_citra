@@ -65,6 +65,6 @@ def access_image():
 
 
 #======Main Program=======
-#load_image()
+load_image()
 # load_image1()
-access_image()
+# access_image()

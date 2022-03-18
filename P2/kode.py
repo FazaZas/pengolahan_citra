@@ -8,22 +8,15 @@ import time
 from array import *
 
 
-def tampil_gambar():
-    img = cv2.imread('img/kuda.jpg')
-    cv2.imshow('img/kuda.jpg')
-    # Menunda windows terdestroy
-    cv2.waitKey(0)
-    return
-
-
 def access_image():
-    img01 = cv2.imread('img/bullish.jpeg')
+    img01 = cv2.imread('img/sapi.jpg')
     row1, col1, n = img01.shape
     print(row1, col1)
     img02 = np.zeros((row1, col1, 3), np.uint8)
+    img03 = np.zeros((140, 200, 3), np.uint8)
     img04 = np.zeros((140, 200, 3), np.uint8)
 
-    img02 = cv2.cvtColor(img01, cv2, COLOR_BGRA2BGR)
+    img02 = cv2.cvtColor(img01, cv2.COLOR_BGR2RGB)
     img03 = img02.copy()
 
     color = (0, 0, 255)
@@ -32,16 +25,16 @@ def access_image():
     print(row4, col4)
 
     plt.subplot(2, 2, 1), plt.imshow(img01)
-    plt.title('gambar 01'), plt.xticks([]), plt.yticks([])
+    plt.title('Sapi 01'), plt.xticks([]), plt.yticks([])
     plt.subplot(2, 2, 2), plt.imshow(img02)
-    plt.title('gambar 02'), plt.xticks([]), plt.yticks([])
-    plt.subplot(2, 2, 2), plt.imshow(img03)
-    plt.title('gambar 03'), plt.xticks([]), plt.yticks([])
+    plt.title('Sapi 02'), plt.xticks([]), plt.yticks([])
+    plt.subplot(2, 2, 3), plt.imshow(img03)
+    plt.title('Sapi 03'), plt.xticks([]), plt.yticks([])
     plt.subplot(2, 2, 4), plt.imshow(img04)
-    plt.title('gambar 04'), plt.xticks([]), plt.yticks([])
+    plt.title('Sapi 04'), plt.xticks([]), plt.yticks([])
+    plt.show()
 
     return
 
 
-# access_image()
-tampil_gambar()
+access_image()

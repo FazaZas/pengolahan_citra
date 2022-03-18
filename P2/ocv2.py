@@ -38,7 +38,7 @@ def load_image1():
 
 
 def access_image():
-    img01 = cv2.imread('img/spongebob1.png')
+    img01 = cv2.imread('img/bullish')
     row1, col1, n = img01.shape
     print(row1, col1)
     img02 = np.zeros((row1, col1, 3), np.uint8)

@@ -1,0 +1,5 @@
+# cara jalan
+# python index.py --dataset dataset --index index.csv
+
+# bar kui
+# python search.py --index index.csv --query queries/kuning01.png --result-path dataset
